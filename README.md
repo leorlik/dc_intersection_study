@@ -28,6 +28,10 @@ Repositório para os arquivos de dependência de negação (Denial Constraints) 
 
 ![](flights/intersections/Venn_3.png)
 
+### Flights (Com sound DCs):
+
+![](flights/intersections/Venn_4.png)
+
 ### Covid:
 
 ![](covid/intersection/Venn_3.png)
