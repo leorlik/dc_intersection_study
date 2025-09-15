@@ -1,0 +1,62 @@
+(metanome-cli) INFO     Running de.metanome.algorithms.dcfinder.DCFinderMetanome
+(metanome-cli) INFO     * in:            [economy_indicators/indicators_csv_3_h2.csv]
+(metanome-cli) INFO     * out:           print
+(metanome-cli) INFO     * configuration: [BUFFER_LENGTH:10000]
+(metanome-cli) INFO     Initializing algorithm.
+(metanome-cli) INFO     Set default value '0.01' on requirement 'APPROXIMATION_DEGREE'
+(metanome-cli) INFO     Set default value 'true' on requirement 'NO_CROSS_COLUMN'
+(metanome-cli) INFO     Set default value '0.3' on requirement 'CROSS_COLUMN_STRING_MIN_OVERLAP'
+(metanome-cli) INFO     Set default value '50000000' on requirement 'CHUNK_LENGTH'
+(metanome-cli) INFO     Size of the predicate space:38
+(metanome-cli) INFO     Time to build plis: 1565
+(metanome-cli) INFO     Error threshold: 0.01.
+(metanome-cli) INFO     Discovering DCs with at most 1109765963 violating tuple pairs.
+(metanome-cli) INFO     First level chunks: 2220
+(metanome-cli) INFO     Available processors: 6
+(metanome-cli) INFO     Building the Evidence Set...
+(metanome-cli) INFO     Finding Minimal Covers for the Evidence Set...
+(metanome-cli) INFO     Building denial constraints...
+(metanome-cli) INFO     Result size: 41
+(metanome-cli) INFO     Elapsed time: 1:15:48.476 (4548476 ms).
+(metanome-cli) INFO     Results:
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.COUNTERPART_AREA<>t1.indicators_csv_3_h2.csv.COUNTERPART_AREA)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA^t0.indicators_csv_3_h2.csv.YEAR_PERIOD<t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE>=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation^t0.indicators_csv_3_h2.csv.YEAR_PERIOD>t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation^t0.indicators_csv_3_h2.csv.YEAR_PERIOD>t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Consolidation status==t1.indicators_csv_3_h2.csv.Consolidation status^t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Consolidation status==t1.indicators_csv_3_h2.csv.Consolidation status^t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.QUARTER==t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.TABLE_IDENTIFIER<>t1.indicators_csv_3_h2.csv.TABLE_IDENTIFIER)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Observation value<>t1.indicators_csv_3_h2.csv.Observation value)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE>=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Consolidation status==t1.indicators_csv_3_h2.csv.Consolidation status^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation^t0.indicators_csv_3_h2.csv.YEAR_PERIOD<=t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Counterpart area<>t1.indicators_csv_3_h2.csv.Counterpart area)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE>=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Consolidation status==t1.indicators_csv_3_h2.csv.Consolidation status^t0.indicators_csv_3_h2.csv.QUARTER==t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA^t0.indicators_csv_3_h2.csv.YEAR_PERIOD>t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Time period<>t1.indicators_csv_3_h2.csv.Time period)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA^t0.indicators_csv_3_h2.csv.YEAR_PERIOD<t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation^t0.indicators_csv_3_h2.csv.YEAR_PERIOD<t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Consolidation status==t1.indicators_csv_3_h2.csv.Consolidation status^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA^t0.indicators_csv_3_h2.csv.YEAR_PERIOD<=t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation^t0.indicators_csv_3_h2.csv.YEAR_PERIOD>t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.QUARTER==t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Consolidation status==t1.indicators_csv_3_h2.csv.Consolidation status^t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Consolidation status==t1.indicators_csv_3_h2.csv.Consolidation status^t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION==t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA^t0.indicators_csv_3_h2.csv.YEAR_PERIOD<=t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION==t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation^t0.indicators_csv_3_h2.csv.YEAR_PERIOD<=t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION==t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION==t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.QUARTER==t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE==t1.indicators_csv_3_h2.csv.OBS_VALUE)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION==t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation^t0.indicators_csv_3_h2.csv.YEAR_PERIOD==t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA^t0.indicators_csv_3_h2.csv.YEAR_PERIOD>=t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.QUARTER==t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation^t0.indicators_csv_3_h2.csv.YEAR_PERIOD>t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA^t0.indicators_csv_3_h2.csv.YEAR_PERIOD==t1.indicators_csv_3_h2.csv.YEAR_PERIOD)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.REF_AREA==t1.indicators_csv_3_h2.csv.REF_AREA)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION==t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.Consolidation status<>t1.indicators_csv_3_h2.csv.Consolidation status)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION<>t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.Consolidation status==t1.indicators_csv_3_h2.csv.Consolidation status)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.Table identifier<>t1.indicators_csv_3_h2.csv.Table identifier)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION==t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.QUARTER<t1.indicators_csv_3_h2.csv.QUARTER^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
+(metanome-cli) INFO     ¬(t0.indicators_csv_3_h2.csv.CONSOLIDATION==t1.indicators_csv_3_h2.csv.CONSOLIDATION^t0.indicators_csv_3_h2.csv.OBS_VALUE<=t1.indicators_csv_3_h2.csv.OBS_VALUE^t0.indicators_csv_3_h2.csv.Transformation<>t1.indicators_csv_3_h2.csv.Transformation)
