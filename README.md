@@ -2,7 +2,7 @@
 
 Repositório para os arquivos de dependência de negação (Denial Constraints) e as intersecções do algoritmo DCFinder para multiplos períodos de tempo para diferentes bases históricas
 
-Fontes das bases:
+## Fontes das bases:
 
 - Flights: https://github.com/NoSocAlgroc/DCValidity/tree/master/datasets - base Flights
 - Covid: https://ourworldindata.org/covid-cases - Data source: World Health Organization (2025); Population based on various sources (2024)
@@ -11,7 +11,7 @@ Fontes das bases:
 - uce: http://catalog.data.ug/dataset/uneb-results-by-school/resource/9678e163-48ca-4ea8-b6bd-bfda5f41a0b3 - Uganda Certificate of Education (UCE)
 - World Development: https://data.worldbank.org/indicator?tab=all - World Bank Group
 
-Dados sobre os datasets:
+## Dados sobre os datasets:
 
 | Dataset | Periodos de Tempos | Linhas | Colunas | Tempo na primeira metade | Tempo na segunda metade | 
 | ------- |------------------  | ------ | ------- | ------------------------ | ----------------------- | 
@@ -22,5 +22,29 @@ Dados sobre os datasets:
 | UCE     | 2011 a 2015  | 14.383 | 27 | 2011 a 2013 | 2014 e 2015 | 
 | WorldDev| 2017 a 2022  | 13975 | 1518 | 2017 a 2019 | 2020 a 2022 | 
 
+## Intersecções:
 
+### Flights:
+
+![](flights/intersections/Venn_3.png)
+
+### Covid:
+
+![](covid/intersection/Venn_3.png)
+
+### Economy:
+
+![](economy/intersection/Venn_3.png)
+
+### Obitos:
+
+![](obitos/intersections/Venn_3.png)
+
+### UCE:
+
+![](uce/intersection/venn_diagram.png)
+
+### World Development:
+
+![](world_development/intersection/Venn_3.png)
 
